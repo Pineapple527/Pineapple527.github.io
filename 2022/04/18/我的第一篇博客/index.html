@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="我的第一篇博客, Hexo">
-    <meta name="description" content="">
+    <meta name="keywords" content="盒子水平居中和垂直居中, Hexo">
+    <meta name="description" content="之前有学过用margin来移动盒子
+12345678910111213141516.father &amp;#123;          /* 相对定位 */          position: relative;          width:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +20,7 @@
 
     
 
-    <title>我的第一篇博客 | Hexo</title>
+    <title>盒子水平居中和垂直居中 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">我的第一篇博客</h1>
+                    <h1 class="description center-align post-title">盒子水平居中和垂直居中</h1>
                 </div>
             </div>
         </div>
@@ -463,7 +464,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>之前有学过用margin来移动盒子</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.father &#123;</span><br><span class="line">          /* 相对定位 */</span><br><span class="line">          position: relative;</span><br><span class="line">          width: 500px;</span><br><span class="line">          height: 500px;</span><br><span class="line">          background-color: skyblue;</span><br><span class="line">          margin: 100px auto;</span><br><span class="line">      	&#125;</span><br><span class="line">      .son &#123;</span><br><span class="line">          /* 绝对定位 */</span><br><span class="line">          position: absolute;</span><br><span class="line">          left: 50%;</span><br><span class="line">          top: 50%;</span><br><span class="line">          margin-top: -100px;</span><br><span class="line">          margin-left: -100px;</span><br><span class="line">           &#125;</span><br></pre></td></tr></table></figure>
+
+<p>今天又新学了一种移动盒子的方法：位移</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transform: translate(-50%,-50%);</span><br></pre></td></tr></table></figure>
+
+<p> 这种方式的弊端是PC端 布局有兼容性问题； 移动端可以放心使用 。</p>
+
                 
             </div>
             <hr/>
@@ -707,9 +715,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="盒子水平居中和垂直居中">
                         
-                        <span class="card-title">我的第一篇博客</span>
+                        <span class="card-title">盒子水平居中和垂直居中</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -738,16 +746,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/18/hello-world/">
+                <a href="/2022/04/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="盒子水平居中和垂直居中">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">盒子水平居中和垂直居中</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -768,6 +776,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
